@@ -1,8 +1,8 @@
 export const RECIPE_CATEGORIES = [
-  { id: '1', name: 'BREAKFAST', icon: '🍳' },
-  { id: '2', name: 'LUNCH', icon: '🥗' },
-  { id: '3', name: 'DINNER', icon: '🍝' },
-  { id: '4', name: 'DESSERT', icon: '🍰' },
+  { id: '1', name: 'Breakfast', icon: '🍳' },
+  { id: '2', name: 'Lunch', icon: '🥗' },
+  { id: '3', name: 'Dinner', icon: '🍝' },
+  { id: '4', name: 'Desser', icon: '🍰' },
 ];
 
 export const RECIPES = [
