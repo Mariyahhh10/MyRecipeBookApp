@@ -17,12 +17,14 @@ export default function App() {
           headerStyle: { backgroundColor: '#ff6b6b' },
           headerTintColor: '#fff',
           headerTitleStyle: { fontWeight: 'bold' },
+          headerTitleAlign: 'center', // Centers header titles across all platforms
+          animation: 'slide_from_right', // Adds smooth screen transition
         }}
       >
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{ title: 'Recipe Book' }}
+          options={{ title: 'Recipe Book 📖' }}
         />
         <Stack.Screen
           name="CategoryList"
