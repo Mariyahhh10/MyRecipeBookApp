@@ -38,7 +38,9 @@ export default function CategoryListScreen({ route, navigation }) {
           renderItem={renderRecipeItem}
         />
       ) : (
-        <Text style={globalStyles.subtitle}>No recipes found in this category.</Text>
+        <><Text style={globalStyles.subtitle}>No recipes found in this category.</Text><Text style={globalStyles.title}>{categoryName} Recipes</Text><Text style={{ color: '#888', marginBottom: 12 }}>
+            {categoryRecipes.length} {categoryRecipes.length === 1 ? 'recipe' : 'recipes'} available
+          </Text></>
       )}
 
       {/* Demonstration of manual reverse navigation using navigation.goBack() */}
