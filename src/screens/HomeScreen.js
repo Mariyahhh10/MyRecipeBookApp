@@ -23,7 +23,12 @@ export default function HomeScreen({ navigation }) {
   return (
     <View style={globalStyles.container}>
       <Text style={globalStyles.title}>Welcome to Recipe Book! 📖</Text>
-      <Text style={globalStyles.subtitle}>Select a category to explore recipes:</Text>
+      
+      {/* Category count text added here */}
+      <Text style={globalStyles.subtitle}>
+        Select from {RECIPE_CATEGORIES.length} categories to explore recipes:
+      </Text>
+
       <FlatList
         data={RECIPE_CATEGORIES}
         keyExtractor={(item) => item.id}
